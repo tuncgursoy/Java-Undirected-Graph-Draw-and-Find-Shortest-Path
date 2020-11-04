@@ -17,6 +17,7 @@ public class PrintMaze {
             int MaxY = getMax(locations,false);
             int MaxX = getMax(locations,true);
 
+
             System.out.println(graph.toString());
         } catch (Exception e) {
             System.out.println("Error :" + e);
@@ -41,9 +42,60 @@ public class PrintMaze {
             }
         }
        return max;
+    }/*
+    public static String[][] AtLocationaty(int y,String[][] locations){
+        int size = 0 ;
+        for (String[] a : locations){
+            if (Integer.parseInt(a[2])==y)
+            {
+                size++;
+            }
+        }
+        if (size== 0)
+            return null;
+        else{
+            int i =0 ;
+        String[][] temp = new String[size][3];
+        for (String[] a : locations){
+            if (Integer.parseInt(a[2])==y)
+            {
+                temp[i]= a ;
+            }
+        }
+        int[] Arrx = new int[size] ;
+        i = 0 ;
+            for (String[] a : temp){
+                if (Integer.parseInt(a[2])==y)
+                {
+                    Arrx[i]= Integer.parseInt(a[1]) ;
+                }
+            }
+            int[] sortedX = bubbleSort(Arrx);
+
+
     }
+     }*/
+    static int[] bubbleSort(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n - i - 1; j++)
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+        }
+        return arr;
+    }
+    /*
+    public static  String[][] Get(int x ,  int y,String[][] locations){
+        int totalLinex= (x+1)*37;
+        int totalLineY= (y+1)*37;
+        String[][] temp
 
-
+    }
+*/
     public static String[][]getSquare(String a ){
         String[][] temp;
         if (a.length()==1){
