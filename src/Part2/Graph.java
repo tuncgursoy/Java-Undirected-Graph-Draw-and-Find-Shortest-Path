@@ -6,7 +6,7 @@
 // Assignment: 2
 // Description: A graph, implemented using an array of sets.
 //-----------------------------------------------------
-package Part1;
+package Part2;
 
 /******************************************************************************
  *  Compilation:  javac Graph.java
@@ -44,7 +44,9 @@ package Part1;
  *
  ******************************************************************************/
 
-import java.io.InputStream;
+import Part1.Bag;
+import Part1.Stack;
+
 import java.util.NoSuchElementException;
 
 /**
@@ -113,7 +115,7 @@ public class Graph {
      * @throws IllegalArgumentException if the number of vertices or edges is negative
      * @throws IllegalArgumentException if the input stream is in the wrong format
      */
-    public Graph(String[][] in,int size) {
+    public Graph(String[][] in, int size) {
         if (in == null) throw new IllegalArgumentException("argument is null");
         try {
             this.V = size;

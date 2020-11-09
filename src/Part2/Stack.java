@@ -3,10 +3,10 @@
 // User: Tunç Gürsoy
 // ID: 64528127274
 // Section: 1
-// Assignment: 2
+// Assignment: 1
 // Description: A generic stack, implemented using a singly linked list.
 //-----------------------------------------------------
-package Part1;
+package Part2;
 
 
 /******************************************************************************
